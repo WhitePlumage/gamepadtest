@@ -21,7 +21,16 @@ function addgamepad(gamepad) {
   d.setAttribute("id", "controller" + gamepad.index);
   var t = document.createElement("h1");
   t.appendChild(document.createTextNode("gamepad: " + gamepad.id));
+  
+  var gamepad_info = document.createElement('p');
+  gamepad_info.innerHTML = `
+    mapping: ${gamepad.mapping || "not mapped"}.<br>
+    ${gamepad.buttons.length} buttons and ${gamepad.axes.length} axes.
+  `
+  
   d.appendChild(t);
+  d.appendChild(gamepad_info);
+
   var b = document.createElement("div");
   b.className = "buttons";
   for (var i=0; i<gamepad.buttons.length; i++) {
