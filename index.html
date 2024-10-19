@@ -17,15 +17,24 @@ You should have received a copy of the CC0 Public Domain Dedication along with t
 <style>
 .axes {
   padding: 1em;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1em;
 }
 
 .buttons {
   margin-left: 1em;
 }
 
+.axis-wrapper {
+  width: 14em;
+  display: flex;
+  flex-direction: column;
+}
+
 /*meter*/.axis {
-  min-width: 200px;
-  margin: 1em;
+  min-width: 12em;
+  /* margin: 1em; */
 }
 
 .button {
@@ -58,6 +67,5 @@ You should have received a copy of the CC0 Public Domain Dedication along with t
 </head>
 <body>
 <h2 id="start">Press a button on your controller to start</h2>
-<a href="https://github.com/luser/gamepadtest"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
 </body>
 </html>
