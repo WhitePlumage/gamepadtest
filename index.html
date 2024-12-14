@@ -13,7 +13,7 @@ To the extent possible under law, the author(s) have dedicated all copyright and
 You should have received a copy of the CC0 Public Domain Dedication along with this software. If not, see <http://creativecommons.org/publicdomain/zero/1.0/>.
 
 -->
-<script type="text/javascript" src="gamepadtest.js"></script>
+<script src="gamepadtest.js"></script>
 <style>
 .axes {
   padding: 1em;
@@ -24,6 +24,9 @@ You should have received a copy of the CC0 Public Domain Dedication along with t
 
 .buttons {
   margin-left: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
 }
 
 .axis-wrapper {
@@ -38,11 +41,10 @@ You should have received a copy of the CC0 Public Domain Dedication along with t
 }
 
 .button {
-  display: inline-block;
   width: 1em;
   text-align: center;
   padding: 1em;
-  border-radius: 20px;
+  border-radius: 18%;
   border: 1px solid black;
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAAXNSR0IArs4c6QAAAAxJREFUCNdjYPjPAAACAgEAqiqeJwAAAABJRU5ErkJggg==);
   background-size: 0% 0%;
